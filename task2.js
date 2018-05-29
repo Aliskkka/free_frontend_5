@@ -1,4 +1,4 @@
-var n = process.argv[2];
+var n = process.argv[1];
 /**
  * Обратим знак для четных чисел последовательности
  */
@@ -440,5 +440,4 @@ const fib = function (n) {
     
     return result;
 }
-console.log(strint.add("4181", "6765"));
 process.stdout.write(fib(n)+"");
