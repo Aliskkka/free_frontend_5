@@ -39,4 +39,5 @@ const splitString = function (input_string) {
     }
     return result.join(' ');
 }
+process.stdout.write("1111");
 process.stdout.write(splitString(input_string));
