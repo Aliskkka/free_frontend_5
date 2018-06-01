@@ -21,6 +21,5 @@ const isPalindrom = function (input_string) {
     }
     return true;
 };
-
-const result = 'jkhhfsdjhkd'; //isPalindrom(input_string) ? "YES" : "NO";
+const result = isPalindrom(input_string) ? "YES" : "NO";
 process.stdout.write(result);

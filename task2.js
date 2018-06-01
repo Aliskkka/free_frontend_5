@@ -1,4 +1,5 @@
-var n = process.argv[1];
+const args = process.argv.slice(-1);
+var n = args[0];
 /**
  * Обратим знак для четных чисел последовательности
  */
@@ -416,6 +417,7 @@ const strint = get_strint();
  */
 const fib = function (n) {
     var a = "1", b = "1", c = 0;
+    n = parseInt(n, 10);
     const fib_index = Math.abs(n);
     if (n === 0) {
         return 0;
@@ -431,7 +433,6 @@ const fib = function (n) {
         a = b;
         b = c;
 
-        //console.log(c);
     }
     var result = c;
     if (n < 0 && fib_index % 2 === 0) {

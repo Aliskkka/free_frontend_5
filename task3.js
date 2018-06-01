@@ -1,8 +1,8 @@
-const input_string = process.argv[1];
-
+const args = process.argv.slice(-1);
+const input_string = args[0];
 const numbers_list = "1234567890";
-const vowel_list = "aeiouy";
-const consonant_list = "bcdfghjklmnpqrstvwxz";
+const vowel_list = "aeiou";
+const consonant_list = "bcdfghjklmnpqrstvwxyz";
 
 const splitString = function (input_string) {
     const length = input_string.length;
@@ -39,5 +39,4 @@ const splitString = function (input_string) {
     }
     return result.join(' ');
 }
-process.stdout.write("1111");
 process.stdout.write(splitString(input_string));
