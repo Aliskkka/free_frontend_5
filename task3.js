@@ -1,11 +1,10 @@
-const args = process.argv.slice(-1);
-const input_string = args[0];
-const numbers_list = "1234567890";
-const vowel_list = "aeiou";
-const consonant_list = "bcdfghjklmnpqrstvwxyz";
+var input_string = process.argv.slice(-1)[0];
+var numbers_list = "1234567890";
+var vowel_list = "aeiou";
+var consonant_list = "bcdfghjklmnpqrstvwxyz";
 
-const splitString = function (input_string) {
-    const length = input_string.length;
+var splitString = function (input_string) {
+    var length = input_string.length;
     var numbers = [],
     vowel = [],
     consonant = [],
