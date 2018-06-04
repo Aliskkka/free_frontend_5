@@ -1,4 +1,4 @@
-var input_string = process.argv.slice(-1)[0];
+var input_string = process.argv[process.argv.length - 1];
 
 /**
  * Подготовим строку, удалив из нее все ненужные символы и приведя символы к нижнему регистру
