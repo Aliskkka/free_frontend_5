@@ -38,4 +38,5 @@ var splitString = function (input_string) {
     }
     return result.join(' ');
 }
+
 process.stdout.write(splitString(input_string));

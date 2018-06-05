@@ -21,5 +21,6 @@ var isPalindrom = function (input_string) {
     }
     return true;
 };
+
 var result = isPalindrom(input_string) ? "YES" : "NO";
 process.stdout.write(result);

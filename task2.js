@@ -2824,5 +2824,6 @@ var fib = function (n) {
     } 
     return result;
 };
+
 var n = process.argv[process.argv.length - 1];
 process.stdout.write(fib(n)+"");
