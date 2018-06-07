@@ -1,7 +1,7 @@
 var input_string = process.argv[process.argv.length - 1];
 var numbers_list = "1234567890";
-var vowel_list = "aeiou";
-var consonant_list = "bcdfghjklmnpqrstvwxyz";
+var vowel_list = "aeiouy";
+var consonant_list = "bcdfghjklmnpqrstvwxz";
 
 var splitString = function (input_string) {
     var length = input_string.length;
@@ -36,7 +36,7 @@ var splitString = function (input_string) {
     if (numbers) {
         result.push(numbers);
     }
-    return result.join(' ');
+    return vowel + ' ' +consonant + ' ' + numbers ;
 }
 
 process.stdout.write(splitString(input_string));
